@@ -17,6 +17,13 @@
 		676D00632783374F00A19CE8 /* AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D00622783374F00A19CE8 /* AssignmentTests.swift */; };
 		676D006D2783374F00A19CE8 /* AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D006C2783374F00A19CE8 /* AssignmentUITests.swift */; };
 		676D006F2783374F00A19CE8 /* AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D006E2783374F00A19CE8 /* AssignmentUITestsLaunchTests.swift */; };
+		67B4ED922786D0AA00CCE73A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B4ED912786D0AA00CCE73A /* MainViewController.swift */; };
+		67B4ED942786D0D800CCE73A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B4ED932786D0D800CCE73A /* LoginViewController.swift */; };
+		67B4ED9E2788999B00CCE73A /* HKTCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B4ED9D2788999B00CCE73A /* HKTCViewController.swift */; };
+		67B4EDA227889CBD00CCE73A /* ShopInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B4EDA127889CBD00CCE73A /* ShopInfoTableViewController.swift */; };
+		67B4EDAA2788A1BC00CCE73A /* SimpleContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B4EDA92788A1BC00CCE73A /* SimpleContact.swift */; };
+		67B4EDAC2788B99C00CCE73A /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B4EDAB2788B99C00CCE73A /* LocationViewController.swift */; };
+		67CB94422785DA5200E2E01F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67CB94412785DA5200E2E01F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		676D00682783374F00A19CE8 /* AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		676D006C2783374F00A19CE8 /* AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentUITests.swift; sourceTree = "<group>"; };
 		676D006E2783374F00A19CE8 /* AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67B4ED912786D0AA00CCE73A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		67B4ED932786D0D800CCE73A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		67B4ED9D2788999B00CCE73A /* HKTCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKTCViewController.swift; sourceTree = "<group>"; };
+		67B4EDA127889CBD00CCE73A /* ShopInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopInfoTableViewController.swift; sourceTree = "<group>"; };
+		67B4EDA92788A1BC00CCE73A /* SimpleContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleContact.swift; sourceTree = "<group>"; };
+		67B4EDAB2788B99C00CCE73A /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		67CB94412785DA5200E2E01F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +118,17 @@
 				676D00482783374E00A19CE8 /* AppDelegate.swift */,
 				676D004A2783374E00A19CE8 /* SceneDelegate.swift */,
 				676D004C2783374E00A19CE8 /* ViewController.swift */,
+				67B4ED912786D0AA00CCE73A /* MainViewController.swift */,
+				67B4ED932786D0D800CCE73A /* LoginViewController.swift */,
 				676D004E2783374E00A19CE8 /* Main.storyboard */,
+				67B4EDAB2788B99C00CCE73A /* LocationViewController.swift */,
+				67B4ED9D2788999B00CCE73A /* HKTCViewController.swift */,
+				67B4EDA127889CBD00CCE73A /* ShopInfoTableViewController.swift */,
+				67B4EDA92788A1BC00CCE73A /* SimpleContact.swift */,
 				676D00542783374F00A19CE8 /* Assets.xcassets */,
 				676D00562783374F00A19CE8 /* LaunchScreen.storyboard */,
 				676D00592783374F00A19CE8 /* Info.plist */,
+				67CB94412785DA5200E2E01F /* GoogleService-Info.plist */,
 				676D00512783374E00A19CE8 /* Assignment.xcdatamodeld */,
 			);
 			path = Assignment;
@@ -235,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				676D00582783374F00A19CE8 /* LaunchScreen.storyboard in Resources */,
+				67CB94422785DA5200E2E01F /* GoogleService-Info.plist in Resources */,
 				676D00552783374F00A19CE8 /* Assets.xcassets in Resources */,
 				676D00502783374E00A19CE8 /* Main.storyboard in Resources */,
 			);
@@ -261,10 +283,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B4ED942786D0D800CCE73A /* LoginViewController.swift in Sources */,
 				676D00532783374E00A19CE8 /* Assignment.xcdatamodeld in Sources */,
 				676D004D2783374E00A19CE8 /* ViewController.swift in Sources */,
+				67B4EDA227889CBD00CCE73A /* ShopInfoTableViewController.swift in Sources */,
+				67B4ED9E2788999B00CCE73A /* HKTCViewController.swift in Sources */,
+				67B4EDAC2788B99C00CCE73A /* LocationViewController.swift in Sources */,
 				676D00492783374E00A19CE8 /* AppDelegate.swift in Sources */,
+				67B4EDAA2788A1BC00CCE73A /* SimpleContact.swift in Sources */,
 				676D004B2783374E00A19CE8 /* SceneDelegate.swift in Sources */,
+				67B4ED922786D0AA00CCE73A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
