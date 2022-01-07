@@ -150,7 +150,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="85c-Na-HnK">
-                                <rect key="frame" x="-817" y="-1870" width="2048" height="2732"/>
+                                <rect key="frame" x="-817" y="-918" width="2048" height="2732"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2732" id="HGc-SM-aRn"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="2048" id="Wip-Fa-aa5"/>
@@ -162,10 +162,11 @@
                         <viewLayoutGuide key="safeArea" id="hft-bc-5r6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="85c-Na-HnK" firstAttribute="bottom" secondItem="hft-bc-5r6" secondAttribute="bottom" id="6X3-6k-DBy"/>
                             <constraint firstItem="85c-Na-HnK" firstAttribute="centerX" secondItem="V2E-1S-c4h" secondAttribute="centerX" id="6Z1-mG-5Oa"/>
                             <constraint firstItem="85c-Na-HnK" firstAttribute="centerX" secondItem="V2E-1S-c4h" secondAttribute="centerX" id="GaW-oP-rLB"/>
                             <constraint firstItem="85c-Na-HnK" firstAttribute="centerX" secondItem="V2E-1S-c4h" secondAttribute="centerX" id="HaT-Du-C7O"/>
+                            <constraint firstItem="85c-Na-HnK" firstAttribute="centerY" secondItem="V2E-1S-c4h" secondAttribute="centerY" id="Tu9-ej-T5q"/>
+                            <constraint firstItem="85c-Na-HnK" firstAttribute="centerX" secondItem="V2E-1S-c4h" secondAttribute="centerX" id="rGL-cw-wNN"/>
                             <constraint firstItem="85c-Na-HnK" firstAttribute="centerX" secondItem="V2E-1S-c4h" secondAttribute="centerX" id="zIN-BA-IkG"/>
                         </constraints>
                     </view>
