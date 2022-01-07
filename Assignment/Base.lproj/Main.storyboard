@@ -101,27 +101,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V52-A5-NcJ">
-                                <rect key="frame" x="129" y="282" width="156" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Shop Location"/>
-                                <connections>
-                                    <segue destination="09e-b3-uIb" kind="show" id="tXK-az-Osv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-ab-bQG">
-                                <rect key="frame" x="107" y="198" width="201" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-ab-bQG">
+                                <rect key="frame" x="139.5" y="432.5" width="135" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Shop information"/>
                                 <connections>
                                     <segue destination="KXm-TS-QgX" kind="show" id="5Co-OW-w2e"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V52-A5-NcJ">
+                                <rect key="frame" x="149" y="539" width="116" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Shop Location"/>
+                                <connections>
+                                    <segue destination="09e-b3-uIb" kind="show" id="tXK-az-Osv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mt7-8I-eiW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V52-A5-NcJ" firstAttribute="leading" secondItem="Mt7-8I-eiW" secondAttribute="leading" constant="149" id="5Bh-b7-684"/>
+                            <constraint firstItem="hr7-ab-bQG" firstAttribute="centerY" secondItem="XO9-V6-w2x" secondAttribute="centerY" id="Gb7-0O-YCq"/>
+                            <constraint firstItem="hr7-ab-bQG" firstAttribute="centerY" secondItem="XO9-V6-w2x" secondAttribute="centerY" id="Pbb-Aa-Lwu"/>
+                            <constraint firstItem="V52-A5-NcJ" firstAttribute="centerX" secondItem="XO9-V6-w2x" secondAttribute="centerX" id="YZT-uP-Qf9"/>
+                            <constraint firstItem="V52-A5-NcJ" firstAttribute="top" secondItem="hr7-ab-bQG" secondAttribute="bottom" constant="75.5" id="aDa-TK-Lxy"/>
+                            <constraint firstItem="hr7-ab-bQG" firstAttribute="centerX" secondItem="XO9-V6-w2x" secondAttribute="centerX" id="rHk-gw-LwC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tNc-GU-m0L"/>
                 </viewController>
