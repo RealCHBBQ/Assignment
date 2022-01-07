@@ -186,21 +186,29 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S23-oF-Ymm">
-                                    <rect key="frame" x="19" y="2" width="97" height="34"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S23-oF-Ymm">
+                                    <rect key="frame" x="18.5" y="5" width="97" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="S23-oF-Ymm" secondAttribute="height" multiplier="97:34" id="GDh-BG-QfJ"/>
+                                        <constraint firstAttribute="width" constant="97" id="me4-K9-Grs"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4uw-uO-gCw">
-                                    <rect key="frame" x="159" y="2" width="97" height="34"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4uw-uO-gCw">
+                                    <rect key="frame" x="158.5" y="5" width="97" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="97" id="9aE-MJ-hPf"/>
+                                        <constraint firstAttribute="width" secondItem="4uw-uO-gCw" secondAttribute="height" multiplier="97:34" id="F3i-SF-NKr"/>
+                                    </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFt-N2-aID">
-                                    <rect key="frame" x="296" y="4" width="85" height="31"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFt-N2-aID">
+                                    <rect key="frame" x="295.5" y="6.5" width="53" height="31"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="cFt-N2-aID" secondAttribute="height" multiplier="53:31" id="45p-Q9-Zx4"/>
+                                    </constraints>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Post"/>
                                     <connections>
@@ -209,6 +217,14 @@
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="4uw-uO-gCw" firstAttribute="centerY" secondItem="BHi-wh-sLU" secondAttribute="centerY" id="Eqw-5H-3cb"/>
+                                <constraint firstItem="4uw-uO-gCw" firstAttribute="centerX" secondItem="BHi-wh-sLU" secondAttribute="centerX" id="Tte-Iw-QpO"/>
+                                <constraint firstItem="4uw-uO-gCw" firstAttribute="leading" secondItem="S23-oF-Ymm" secondAttribute="trailing" constant="43" id="k3R-Hu-X0X"/>
+                                <constraint firstItem="S23-oF-Ymm" firstAttribute="centerY" secondItem="BHi-wh-sLU" secondAttribute="centerY" id="nEP-jo-bBI"/>
+                                <constraint firstItem="cFt-N2-aID" firstAttribute="leading" secondItem="4uw-uO-gCw" secondAttribute="trailing" constant="40" id="rS7-YD-vPR"/>
+                                <constraint firstItem="cFt-N2-aID" firstAttribute="centerY" secondItem="BHi-wh-sLU" secondAttribute="centerY" id="yWE-tL-jMQ"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCell" textLabel="ZQ1-f3-Nnx" detailTextLabel="neZ-dF-bDg" style="IBUITableViewCellStyleValue1" id="VQN-0z-GBK">
@@ -255,7 +271,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hC-yO-ugF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3278" y="-307"/>
+            <point key="canvasLocation" x="3276.811594202899" y="-307.36607142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wSm-0s-DjE">
