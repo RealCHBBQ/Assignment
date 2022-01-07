@@ -149,20 +149,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="85c-Na-HnK">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="85c-Na-HnK">
+                                <rect key="frame" x="-817" y="-1870" width="2048" height="2732"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="85c-Na-HnK" secondAttribute="height" multiplier="23:42" id="RUC-rc-e81"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="2732" id="HGc-SM-aRn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="2048" id="Wip-Fa-aa5"/>
+                                    <constraint firstAttribute="width" constant="2048" id="X09-IV-43Z"/>
+                                    <constraint firstAttribute="height" constant="2732" id="nM3-vn-diG"/>
                                 </constraints>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hft-bc-5r6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="85c-Na-HnK" firstAttribute="centerY" secondItem="V2E-1S-c4h" secondAttribute="centerY" id="4Xp-24-n0k"/>
+                            <constraint firstItem="85c-Na-HnK" firstAttribute="bottom" secondItem="hft-bc-5r6" secondAttribute="bottom" id="6X3-6k-DBy"/>
                             <constraint firstItem="85c-Na-HnK" firstAttribute="centerX" secondItem="V2E-1S-c4h" secondAttribute="centerX" id="6Z1-mG-5Oa"/>
                             <constraint firstItem="85c-Na-HnK" firstAttribute="centerX" secondItem="V2E-1S-c4h" secondAttribute="centerX" id="GaW-oP-rLB"/>
-                            <constraint firstItem="85c-Na-HnK" firstAttribute="bottom" secondItem="hft-bc-5r6" secondAttribute="bottom" id="IOI-dd-Ddb"/>
+                            <constraint firstItem="85c-Na-HnK" firstAttribute="centerX" secondItem="V2E-1S-c4h" secondAttribute="centerX" id="HaT-Du-C7O"/>
+                            <constraint firstItem="85c-Na-HnK" firstAttribute="centerX" secondItem="V2E-1S-c4h" secondAttribute="centerX" id="zIN-BA-IkG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XaZ-QG-DZy"/>
@@ -172,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bUf-8h-DZX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3277" y="483"/>
+            <point key="canvasLocation" x="3276.811594202899" y="482.8125"/>
         </scene>
         <!--Shop Info Table View Controller-->
         <scene sceneID="M5M-d4-kt0">
