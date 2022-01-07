@@ -8,7 +8,7 @@
 import UIKit
 
 class ShopInfoTableViewController: UITableViewController {
-
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var telTextField: UITextField!
     @IBAction func sendBtnClicked(_ sender: UIButton) {
@@ -61,7 +61,6 @@ class ShopInfoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
