@@ -8,6 +8,8 @@
 import Foundation
 
 struct SimpleContact : Codable{
+    
    var name : String
    var tel : String
+    
 }
