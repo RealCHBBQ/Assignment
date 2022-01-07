@@ -190,15 +190,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S23-oF-Ymm">
-                                    <rect key="frame" x="18.5" y="5" width="97" height="34"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="S23-oF-Ymm" secondAttribute="height" multiplier="97:34" id="GDh-BG-QfJ"/>
-                                        <constraint firstAttribute="width" constant="97" id="me4-K9-Grs"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4uw-uO-gCw">
                                     <rect key="frame" x="158.5" y="5" width="97" height="34"/>
                                     <constraints>
@@ -209,9 +200,10 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFt-N2-aID">
-                                    <rect key="frame" x="295.5" y="6.5" width="53" height="31"/>
+                                    <rect key="frame" x="295.5" y="5" width="97" height="34"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" secondItem="cFt-N2-aID" secondAttribute="height" multiplier="53:31" id="45p-Q9-Zx4"/>
+                                        <constraint firstAttribute="width" constant="97" id="7xL-hK-kkP"/>
+                                        <constraint firstAttribute="height" constant="34" id="k1T-Ld-bYe"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Post"/>
@@ -219,11 +211,24 @@
                                         <action selector="sendBtnClicked:" destination="KXm-TS-QgX" eventType="touchUpInside" id="gUn-xJ-Q7D"/>
                                     </connections>
                                 </button>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S23-oF-Ymm">
+                                    <rect key="frame" x="18.5" y="5" width="97" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="S23-oF-Ymm" secondAttribute="height" multiplier="97:34" id="GDh-BG-QfJ"/>
+                                        <constraint firstAttribute="width" constant="97" id="me4-K9-Grs"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="4uw-uO-gCw" firstAttribute="centerY" secondItem="BHi-wh-sLU" secondAttribute="centerY" id="Eqw-5H-3cb"/>
+                                <constraint firstItem="4uw-uO-gCw" firstAttribute="centerY" secondItem="S23-oF-Ymm" secondAttribute="centerY" id="Lmp-Bk-YKE"/>
                                 <constraint firstItem="4uw-uO-gCw" firstAttribute="centerX" secondItem="BHi-wh-sLU" secondAttribute="centerX" id="Tte-Iw-QpO"/>
+                                <constraint firstItem="4uw-uO-gCw" firstAttribute="centerY" secondItem="S23-oF-Ymm" secondAttribute="centerY" id="cwl-pv-4MD"/>
+                                <constraint firstItem="cFt-N2-aID" firstAttribute="centerY" secondItem="S23-oF-Ymm" secondAttribute="centerY" id="fIR-jL-eSs"/>
+                                <constraint firstItem="cFt-N2-aID" firstAttribute="centerY" secondItem="S23-oF-Ymm" secondAttribute="centerY" id="fbv-14-WaE"/>
                                 <constraint firstItem="4uw-uO-gCw" firstAttribute="leading" secondItem="S23-oF-Ymm" secondAttribute="trailing" constant="43" id="k3R-Hu-X0X"/>
                                 <constraint firstItem="S23-oF-Ymm" firstAttribute="centerY" secondItem="BHi-wh-sLU" secondAttribute="centerY" id="nEP-jo-bBI"/>
                                 <constraint firstItem="cFt-N2-aID" firstAttribute="leading" secondItem="4uw-uO-gCw" secondAttribute="trailing" constant="40" id="rS7-YD-vPR"/>
